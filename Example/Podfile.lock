@@ -1,0 +1,16 @@
+PODS:
+  - WarpGeometryFilter (0.1.0)
+
+DEPENDENCIES:
+  - WarpGeometryFilter (from `../`)
+
+EXTERNAL SOURCES:
+  WarpGeometryFilter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WarpGeometryFilter: 3987047363a781ea9e0b212500ea26ebd3dad398
+
+PODFILE CHECKSUM: 420c3d7f47b49baf7750c4d30e5b826f5ba43fee
+
+COCOAPODS: 1.7.5
