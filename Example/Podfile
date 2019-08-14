@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WarpGeometryFilter_Example' do
+  pod 'WarpGeometryFilter', :path => '../'
+
+  target 'WarpGeometryFilter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
