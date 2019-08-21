@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WarpGeometryFilter: 3987047363a781ea9e0b212500ea26ebd3dad398
+  WarpGeometryFilter: 6c89c3a4be74c59fe54915c7fcbf77f4ba31ffed
 
 PODFILE CHECKSUM: 420c3d7f47b49baf7750c4d30e5b826f5ba43fee
 
