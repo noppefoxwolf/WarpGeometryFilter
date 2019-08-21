@@ -14,8 +14,9 @@ extension CGImage {
       CVPixelBufferUnlockBaseAddress(cvPixelBuffer, .init(rawValue: 0))
     }
     guard let sourceBaseAddr = CVPixelBufferGetBaseAddress(cvPixelBuffer) else { return nil }
-    let height: Int = CVPixelBufferGetHeight(cvPixelBuffer)
-    let width: Int = CVPixelBufferGetWidth(cvPixelBuffer)
+    // 謎の黒い縁が出ることがあるので1px縮小
+    let height: Int = CVPixelBufferGetHeight(cvPixelBuffer) - 1
+    let width: Int = CVPixelBufferGetWidth(cvPixelBuffer) - 1
     let bytesPerRow: Int = CVPixelBufferGetBytesPerRow(cvPixelBuffer)
     let bitmapInfo: CGBitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.noneSkipFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue)
     var cvPixelBuffer = cvPixelBuffer
